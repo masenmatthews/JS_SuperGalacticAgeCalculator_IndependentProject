@@ -29,8 +29,8 @@ export class User {
     return mercuryAge
   }
   mercuryTimeLeft() {
-    const MercuryFemaleLifeExpect = 19
-    const MercuryMaleLifeExpect = 18
+    const mercuryFemaleLifeExpect = 19
+    const mercuryMaleLifeExpect = 18
     let mercuryAge = (Math.floor(this.age * 0.24));
     if (mercuryAge <= 19 && this.sex === "female") {
       let mercuryRemainingLife = (19 - mercuryAge);
@@ -47,8 +47,8 @@ export class User {
     return venusAge
   }
   venusTimeLeft() {
-    const VenusFemaleLifeExpect = 50
-    const VenusMaleLifeExpect = 47
+    const venusFemaleLifeExpect = 50
+    const venusMaleLifeExpect = 47
     let venusAge = (Math.floor(this.age * 0.62));
     if (venusAge <= 50 && this.sex === "female") {
       let venusRemainingLife = (50 - venusAge);
@@ -71,7 +71,7 @@ export class User {
     if (marsAge <= 152 && this.sex === "female") {
       let marsRemainingLife = (152 - marsAge);
       return marsRemainingLife
-    } else if (venusAge <= 142 && this.sex === "male") {
+    } else if (marsAge <= 142 && this.sex === "male") {
       let marsRemainingLife = (142 - marsAge);
       return marsRemainingLife
     } else {
@@ -83,15 +83,15 @@ export class User {
     return jupiterAge
   }
   jupiterTimeLeft() {
-    const jupiterLifeExpect = 152
-    const marsMaleLifeExpect = 142
-    let marsAge = (Math.floor(this.age * 1.88));
-    if (marsAge <= 152 && this.sex === "female") {
-      let marsRemainingLife = (152 - marsAge);
-      return marsRemainingLife
-    } else if (venusAge <= 142 && this.sex === "male") {
-      let marsRemainingLife = (142 - marsAge);
-      return marsRemainingLife
+    const jupiterFemaleLifeExpect = 960
+    const jupiterMaleLifeExpect = 901
+    let jupiterAge = (Math.floor(this.age * 11.86));
+    if (jupiterAge <= 960 && this.sex === "female") {
+      let jupiterRemainingLife = (960 - jupiterAge);
+      return jupiterRemainingLife
+    } else if (jupiterAge <= 901 && this.sex === "male") {
+      let jupiterRemainingLife = (901 - jupiterAge);
+      return jupiterRemainingLife
     } else {
       return "You have surpassed your otherwordly life expectancy!"
     }

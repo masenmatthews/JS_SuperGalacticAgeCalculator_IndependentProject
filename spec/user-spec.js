@@ -37,7 +37,7 @@ describe('User', function() {
   });
 
   it("Takes the user's age and sex and returns how many Mars years they have left to live", function() {
-    expect(human.marsTimeLeft()).toEqual(109);
+    expect(human.marsTimeLeft()).toEqual(99);
   });
 
   it("Takes the user's age and return it in Jupiter years", function() {
@@ -45,7 +45,7 @@ describe('User', function() {
   });
 
   it("Takes the user's age and sex and returns how many Jupiter years they have left to live", function() {
-    expect(human.jupiterTimeLeft()).toEqual();
+    expect(human.jupiterTimeLeft()).toEqual(629);
   });
 
   it("Estimates remaining life expectancy based on age and sex", function() {
