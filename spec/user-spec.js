@@ -20,12 +20,16 @@ describe('User', function() {
     expect(human.mercuryAge()).toEqual(5);
   });
 
-  it("Takes the user's age and returns how many Mercury years they have left to live", function() {
+  it("Takes the user's age and sex and returns how many Mercury years they have left to live", function() {
     expect(human.mercuryTimeLeft()).toEqual(13);
   });
 
   it("Takes the user's age and return it in Venus years", function() {
     expect(human.venusAge()).toEqual(14);
+  });
+
+  it("Takes the user's age and sex and returns how many Venus years they have left to live", function() {
+    expect(human.venusTimeLeft()).toEqual(33);
   });
 
   it("Takes the user's age and return it in Mars years", function() {
