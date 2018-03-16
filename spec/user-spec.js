@@ -2,11 +2,9 @@ import { User } from './../js/user.js';
 
 describe('User', function() {
   let human;
-  let date;
 
   beforeEach(function() {
     human = new User(12/19/1994, "male");
-    date = new Time(12/19/2017);
   });
 
   it("Create a new user object", function() {
@@ -23,19 +21,19 @@ describe('User', function() {
   });
 
   it("Takes the user's age and return it in Mercury years", function() {
-    expect(human.mercury()).toEqual(5.52);
+    expect(human.mercury()).toEqual(5);
   });
 
   it("Takes the user's age and return it in Venus years", function() {
-    expect(human.venus()).toEqual(14.26);
+    expect(human.venus()).toEqual(14);
   });
 
   it("Takes the user's age and return it in Mars years", function() {
-    expect(human.mars()).toEqual(43.24);
+    expect(human.mars()).toEqual(43);
   });
 
   it("Takes the user's age and return it in Jupiter years", function() {
-    expect(human.jupiter()).toEqual(272.78);
+    expect(human.jupiter()).toEqual(272);
   });
 
   it("Estimates remaining life expectancy based on age and sex", function() {
