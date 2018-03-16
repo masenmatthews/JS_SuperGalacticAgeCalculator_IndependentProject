@@ -44,6 +44,10 @@ describe('User', function() {
     expect(human.jupiterAge()).toEqual(272);
   });
 
+  it("Takes the user's age and sex and returns how many Jupiter years they have left to live", function() {
+    expect(human.jupiterTimeLeft()).toEqual();
+  });
+
   it("Estimates remaining life expectancy based on age and sex", function() {
     expect(human.life()).toEqual(53);
   });
