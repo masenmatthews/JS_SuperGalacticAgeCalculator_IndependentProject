@@ -64,6 +64,20 @@ export class User {
     let marsAge = (Math.floor(this.age * 1.88));
     return marsAge
   }
+  marsTimeLeft() {
+    const marsFemaleLifeExpect = 152
+    const marsMaleLifExpect = 142
+    let marsAge = (Math.floor(this.age * 1.88));
+    if (marsAge <= 152 && this.sex === "female") {
+      let marsRemainingLife = (152 - marsAge);
+      return marsRemainingLife
+    } else if (venusAge <= 142 && this.sex === "male") {
+      let marsRemainingLife = (142 - marsAge);
+      return marsRemainingLife
+    } else {
+      return "You have surpassed your otherwordly life expectancy!"
+    }
+  }
   jupiterAge() {
     let jupiterAge = (Math.floor(this.age * 11.86));
     return jupiterAge

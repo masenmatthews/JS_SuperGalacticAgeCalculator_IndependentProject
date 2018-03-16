@@ -36,6 +36,10 @@ describe('User', function() {
     expect(human.marsAge()).toEqual(43);
   });
 
+  it("Takes the user's age and sex and returns how many Mars years they have left to live", function() {
+    expect(human.marsTimeLeft()).toEqual(109);
+  });
+
   it("Takes the user's age and return it in Jupiter years", function() {
     expect(human.jupiterAge()).toEqual(272);
   });
