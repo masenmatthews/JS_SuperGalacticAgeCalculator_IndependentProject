@@ -1,15 +1,11 @@
 export class User {
   constructor(birthday, age, sex){
-    this.birthday = birthday;
     this.age = age;
     this.sex = sex;
-    // this.currentDate = new Date().getTime() / 1000;
-    // this.birthYear = birthday.getFullYear()
   }
-
   ageInSeconds() {
-    let age = this.age
-    let ageInSeconds = age.getSeconds();
+    let today = new Date().getTime() / 1000;
+    let ageInSeconds = (Math.floor(today));
     return ageInSeconds
   }
   mercury() {
@@ -28,6 +24,4 @@ export class User {
     let jupiterAge = (Math.floor(this.age * 11.86));
     return jupiterAge
   }
-
-
 }
