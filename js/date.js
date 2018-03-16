@@ -7,6 +7,6 @@ export class Date {
     let dateOne = (this.dateOne * 31556952)
     let dateTwo = (this.dateTwo * 31556952)
     let newDate = (dateOne - dateTwo);
-    return difference
+    return newDate
   }
 }

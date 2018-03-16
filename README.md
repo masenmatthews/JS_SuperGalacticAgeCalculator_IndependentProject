@@ -51,7 +51,7 @@
 
 * _Clone GitHub repository to desktop or desired directory_
 * _Navigate to directory in terminal_
-________TO BE COMPLETED__________
+*
 
 ## Known Bugs
 *There are currently no known bugs in this application*
