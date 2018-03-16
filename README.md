@@ -10,33 +10,51 @@
   In addition to these functionalities, this application can approximate the user's remaining life expectancy. If the user has surpassed their life expectancy, the application can return the numbers of years beyond the life expectancy that have passed._
 
 ## Specifications / User Expectations
-1.
+1. Users birthday in years can be returned in seconds
+  * Input example: 12/19/1994 (23 years old)
+  * Output example: 725,328,000 seconds
+
+2. Application can determine the difference between two dates in seconds
+  * Input example: 12/30/2017 and 12/31/2017
+  * Output example: 86,400 seconds
+
+3. A human's age can be returned in Mercury years
+  * Input example: 1 Earth year
+  * Output example: .24 Mercury years
+
+4. A human's age can be returned in Venus years
+  * Input example: 1 Earth year
+  * Output example: .62 Venus years
+
+5. A human's age can be returned in Mars years
+  * Input example: 1 Earth year
+  * Output example: 1.88 Mars years
+
+6. A human's age can be returned in Jupiter years
+  * Input example: 1 Earth year
+  * Output example: 11.88 Venus years
+
+7. A human's age in Jupiter years
+  * Input example: 1 Earth year
+  * Output example: 11.88 Venus years
+
+8. The application can approximate how much time the user has left to live on each  planet
   * Input example:
   * Output example:
 
-2.
+9. The application can approximate how many years the user has lived past life expectancy
   * Input example:
   * Output example:
 
-3.
-  * Input example:
-  * Output example:
-
-4.
-  * Input example:
-  * Output example:
 
 ## Setup/Installation Requirements
 
 * _Clone GitHub repository to desktop or desired directory_
 * _Navigate to directory in terminal_
-* _Ensure that Postgres is running and launch database using the 'rake db:migrate' command in the terminal_
-* _Ensure that gems are installed by running "bundle" in the terminal_
-* _Launch application in Sinatra by entering the "ruby app.rb" command_
-* _Navigate to webpage in browser by navigating to localhost:4567_
+________TO BE COMPLETED__________
 
 ## Known Bugs
-**
+*There are currently no known bugs in this application*
 
 ## Support and contact details
 
