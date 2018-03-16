@@ -4,7 +4,7 @@ describe('User', function() {
   let human;
 
   beforeEach(function() {
-    human = new User(12/19/1994, 23, "male");
+    human = new User(23, "male");
   });
 
   it("Create a new user object", function() {
@@ -12,8 +12,8 @@ describe('User', function() {
     expect(human.sex).toEqual("male");
   });
 
-  it("Takes the user's birthday and return it in seconds", function() {
-    expect(human.ageInSeconds()).toEqual(725328000);
+  it("Returns user's age in seconds", function() {
+    expect(human.ageInSeconds()).toEqual(725809896);
   });
 
   it("Takes the user's age and return it in Mercury years", function() {

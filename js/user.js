@@ -1,11 +1,10 @@
 export class User {
-  constructor(birthday, age, sex){
+  constructor(age, sex){
     this.age = age;
     this.sex = sex;
   }
   ageInSeconds() {
-    let today = new Date().getTime() / 1000;
-    let ageInSeconds = (Math.floor(today));
+    let ageInSeconds = (this.age * 31556952);
     return ageInSeconds
   }
   mercury() {
