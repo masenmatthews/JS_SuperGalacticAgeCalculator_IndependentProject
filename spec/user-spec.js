@@ -20,23 +20,23 @@ describe('User', function() {
   });
 
   it("Takes the user's birthday and return it in seconds", function() {
-    expect(human.ageInSeconds()).toEqual();
+    expect(human.ageInSeconds()).toEqual(725328000);
   });
 
   it("Takes the user's age and return it in Mercury years", function() {
-    expect(human.mercury()).toEqual();
+    expect(human.mercury()).toEqual(5.52);
   });
 
   it("Takes the user's age and return it in Venus years", function() {
-    expect(human.venus()).toEqual();
+    expect(human.venus()).toEqual(14.26);
   });
 
   it("Takes the user's age and return it in Mars years", function() {
-    expect(human.mars()).toEqual();
+    expect(human.mars()).toEqual(43.24);
   });
 
   it("Takes the user's age and return it in Jupiter years", function() {
-    expect(human.jupiter()).toEqual();
+    expect(human.jupiter()).toEqual(272.78);
   });
 
   it("Estimates remaining life expectancy based on age and sex", function() {
