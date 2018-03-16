@@ -6,8 +6,8 @@ describe('User', function() {
   let date;
 
   beforeEach(function() {
-  human = new User(12/19/1994, "male");
-  date = new Time(12/19/2017);
+    human = new User(12/19/1994, "male");
+    date = new Time(12/19/2017);
   });
 
   it("Create a new user object", function() {
@@ -39,5 +39,12 @@ describe('User', function() {
     expect(human.jupiter()).toEqual();
   });
 
+  it("Estimates remaining life expectancy based on age and sex", function() {
+    expect(human.life()).toEqual("");
+  });
 
+  it("Determines the amount of years that the user has surpassed life expectancy by based on age and sex", function() {
+    let oldHuman = new User(12/19/1900, "female");
+    expect(oldHuman.life()).toEqual("");
+  });
 });
