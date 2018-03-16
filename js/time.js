@@ -1,5 +1,5 @@
 export class Time {
   constructor(date){
-    this.newDate = newDate;
+    this.date = date;
   }
 }

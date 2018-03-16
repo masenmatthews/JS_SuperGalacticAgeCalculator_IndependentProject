@@ -1,6 +1,8 @@
 import { Time } from './../js/time.js';
+import { User } from './../js/user.js';
 
 describe('Time', function() {
+  let human;
   let date;
 
   beforeEach(function() {
@@ -9,6 +11,6 @@ describe('Time', function() {
   });
 
   it("Create a new time object", function() {
-    expect(date.newDate).toEqual(12/19/2017);
+    expect(date.date).toEqual(12/19/2017);
   });
 });

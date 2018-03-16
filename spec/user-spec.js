@@ -1,10 +1,13 @@
+import { Time } from './../js/time.js';
 import { User } from './../js/user.js';
 
 describe('User', function() {
   let human;
+  let date;
 
   beforeEach(function() {
   human = new User(12/19/1994, "male");
+  date = new Time(12/19/2017);
   });
 
   it("Create a new user object", function() {
@@ -35,4 +38,6 @@ describe('User', function() {
   it("Takes the user's age and return it in Jupiter years", function() {
     expect(human.jupiter()).toEqual();
   });
+
+
 });
