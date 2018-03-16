@@ -1,4 +1,3 @@
-import {Time} from '../js/time.js';
 import {User} from '../js/user.js';
 import './styles.css';
 import $ from 'jquery';
