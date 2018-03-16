@@ -12,7 +12,11 @@ describe('User', function() {
     expect(human.sex).toEqual("male")
   });
 
-  it("should take the user's birthday and return it in years and seconds", function() {
+  it("should take the user's birthday and return it in years", function() {
     expect(human.ageInYears()).toEqual(23);
+  });
+
+  it("should take the user's birthday and return it in seconds", function() {
+    expect(human.ageInSeconds()).toEqual(23);
   });
 });
