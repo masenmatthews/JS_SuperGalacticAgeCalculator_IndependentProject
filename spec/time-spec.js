@@ -5,9 +5,10 @@ describe('Time', function() {
 
   beforeEach(function() {
   date = new Time(12/19/2017);
+  human = new User(12/19/1994, "male");
   });
 
   it("Create a new time object", function() {
-    expect(date.date).toEqual(12/19/2017);
+    expect(date.newDate).toEqual(12/19/2017);
   });
 });
