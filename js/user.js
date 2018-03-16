@@ -23,4 +23,21 @@ export class User {
     let jupiterAge = (Math.floor(this.age * 11.86));
     return jupiterAge
   }
+  life() {
+    const FemalelifeExpect = 81;
+    const lifeExpect = 76;
+    if (this.sex === "female" && this.age > 81) {
+      let femaleYearsPastDeath = (this.age - 81);
+      return femaleYearsPastDeath
+    } else if (this.sex === "male" && this.age > 76) {
+      let maleYearsPastDeath = (this.age - 76)
+      return maleYearsPastDeath
+    } else if (this.sex === "female" && this.age < 81) {
+      let femaleRemainingLife = (81 - this.age);
+      return femaleRemainingLife
+    } else if (this.sex === "male" && this.age < 76) {
+      let maleRemainingLife = (76 - this.age);
+      return maleRemainingLife
+    }
+  }
 }

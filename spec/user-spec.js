@@ -33,11 +33,11 @@ describe('User', function() {
   });
 
   it("Estimates remaining life expectancy based on age and sex", function() {
-    expect(human.life()).toEqual("");
+    expect(human.life()).toEqual(53);
   });
 
   it("Determines the amount of years that the user has surpassed life expectancy by based on age and sex", function() {
-    let oldHuman = new User(12/19/1900, "female");
-    expect(oldHuman.life()).toEqual("");
+    let oldHuman = new User(118, "female");
+    expect(oldHuman.life()).toEqual(37);
   });
 });

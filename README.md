@@ -10,9 +10,9 @@
   In addition to these functionalities, this application can approximate the user's remaining life expectancy. If the user has surpassed their life expectancy, the application can return the numbers of years beyond the life expectancy that have passed._
 
 ## Specifications / User Expectations
-1. Users birthday in years can be returned in seconds
-  * Input example: 12/19/1994 (23 years old)
-  * Output example: 725,328,000 seconds
+1. Users age in years can be returned in seconds
+  * Input example: 23 years old
+  * Output example: 725,809,896 seconds
 
 2. Application can determine the difference between two dates in seconds
   * Input example: 12/30/2017 and 12/31/2017
