@@ -1,10 +1,8 @@
 import { Date } from './../js/date.js';
 
 describe('Date', function() {
-  it("Determines the difference between today and a previous date in seconds", function() {
-    let testDate = new Date()
-
-
-
-  });
+  it("Determines the difference between two dates and returns the result in seconds", function() {
+    time = new Date(30, 12)
+    expect(time.difference).toEqual(567648000);
+  })
 });
