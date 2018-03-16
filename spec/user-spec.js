@@ -19,4 +19,12 @@ describe('User', function() {
   it("Takes the user's birthday and return it in seconds", function() {
     expect(human.ageInSeconds()).toEqual(23);
   });
+
+  it("Takes the user's age and return it in Mercury years", function() {
+    expect(human.mercury()).toEqual(23);
+  });
+
+  it("Takes the user's age and return it in Venus years", function() {
+    expect(human.venus()).toEqual(23);
+  });
 });
