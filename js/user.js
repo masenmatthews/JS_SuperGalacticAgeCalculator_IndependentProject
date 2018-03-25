@@ -25,7 +25,7 @@ export class User {
     return ageInSeconds
   }
   mercuryAge() {
-    const mercuryAge = (Math.floor(this.age / 0.24));
+    let mercuryAge = (Math.floor(this.age / 0.24));
     return mercuryAge
   }
   mercuryTimeLeft() {
@@ -84,13 +84,9 @@ export class User {
   }
   jupiterTimeLeft() {
     // Division brings both life expectancies for males and females to 6 with differing decimal values. They're identical in this case because of rounding.
-    const jupiterFemaleLifeExpect = 6
-    const jupiterMaleLifeExpect = 6
+    const jupiterLifeExpect = 6
     let jupiterAge = (Math.floor(this.age / 11.86));
-    if (jupiterAge <= 6 && this.sex === "female") {
-      let jupiterRemainingLife = (6 - jupiterAge);
-      return jupiterRemainingLife
-    } else if (jupiterAge <= 6 && this.sex === "male") {
+    if (jupiterAge <= 6) {
       let jupiterRemainingLife = (6 - jupiterAge);
       return jupiterRemainingLife
     } else {
