@@ -21,7 +21,7 @@ export class User {
     }
   }
   ageInSeconds() {
-    let ageInSeconds = (this.age / 31556952);
+    let ageInSeconds = (this.age * 31556952);
     return ageInSeconds
   }
   mercuryAge() {
@@ -83,14 +83,15 @@ export class User {
     return jupiterAge
   }
   jupiterTimeLeft() {
-    const jupiterFemaleLifeExpect = 960
-    const jupiterMaleLifeExpect = 901
+    // Division brings both life expectancies for males and females to 6 with differing decimal values. They're identical in this case because of rounding.
+    const jupiterFemaleLifeExpect = 6
+    const jupiterMaleLifeExpect = 6
     let jupiterAge = (Math.floor(this.age / 11.86));
-    if (jupiterAge <= 960 && this.sex === "female") {
-      let jupiterRemainingLife = (960 - jupiterAge);
+    if (jupiterAge <= 6 && this.sex === "female") {
+      let jupiterRemainingLife = (6 - jupiterAge);
       return jupiterRemainingLife
-    } else if (jupiterAge <= 901 && this.sex === "male") {
-      let jupiterRemainingLife = (901 - jupiterAge);
+    } else if (jupiterAge <= 6 && this.sex === "male") {
+      let jupiterRemainingLife = (6 - jupiterAge);
       return jupiterRemainingLife
     } else {
       return "You have surpassed your otherwordly life expectancy!"
