@@ -21,35 +21,35 @@ export class User {
     }
   }
   ageInSeconds() {
-    let ageInSeconds = (this.age * 31556952);
+    let ageInSeconds = (this.age / 31556952);
     return ageInSeconds
   }
   mercuryAge() {
-    let mercuryAge = (Math.floor(this.age * 0.24));
+    const mercuryAge = (Math.floor(this.age / 0.24));
     return mercuryAge
   }
   mercuryTimeLeft() {
-    const mercuryFemaleLifeExpect = 19
-    const mercuryMaleLifeExpect = 18
-    let mercuryAge = (Math.floor(this.age * 0.24));
-    if (mercuryAge <= 19 && this.sex === "female") {
-      let mercuryRemainingLife = (19 - mercuryAge);
+    const mercuryFemaleLifeExpect = 337
+    const mercuryMaleLifeExpect = 316
+    let mercuryAge = (Math.floor(this.age / 0.24));
+    if (mercuryAge <= 337 && this.sex === "female") {
+      let mercuryRemainingLife = (337 - mercuryAge);
       return mercuryRemainingLife
-    } else if (mercuryAge <= 18 && this.sex === "male") {
-      let mercuryRemainingLife = (18 - mercuryAge);
+    } else if (mercuryAge <= 316 && this.sex === "male") {
+      let mercuryRemainingLife = (316 - mercuryAge);
       return mercuryRemainingLife
     } else {
       return "You have surpassed your otherwordly life expectancy!"
     }
   }
   venusAge() {
-    let venusAge = (Math.floor(this.age * 0.62));
+    let venusAge = (Math.floor(this.age / 0.62));
     return venusAge
   }
   venusTimeLeft() {
     const venusFemaleLifeExpect = 50
     const venusMaleLifeExpect = 47
-    let venusAge = (Math.floor(this.age * 0.62));
+    let venusAge = (Math.floor(this.age / 0.62));
     if (venusAge <= 50 && this.sex === "female") {
       let venusRemainingLife = (50 - venusAge);
       return venusRemainingLife
@@ -61,13 +61,13 @@ export class User {
     }
   }
   marsAge() {
-    let marsAge = (Math.floor(this.age * 1.88));
+    let marsAge = (Math.floor(this.age / 1.88));
     return marsAge
   }
   marsTimeLeft() {
     const marsFemaleLifeExpect = 152
     const marsMaleLifeExpect = 142
-    let marsAge = (Math.floor(this.age * 1.88));
+    let marsAge = (Math.floor(this.age / 1.88));
     if (marsAge <= 152 && this.sex === "female") {
       let marsRemainingLife = (152 - marsAge);
       return marsRemainingLife
@@ -79,13 +79,13 @@ export class User {
     }
   }
   jupiterAge() {
-    let jupiterAge = (Math.floor(this.age * 11.86));
+    let jupiterAge = (Math.floor(this.age / 11.86));
     return jupiterAge
   }
   jupiterTimeLeft() {
     const jupiterFemaleLifeExpect = 960
     const jupiterMaleLifeExpect = 901
-    let jupiterAge = (Math.floor(this.age * 11.86));
+    let jupiterAge = (Math.floor(this.age / 11.86));
     if (jupiterAge <= 960 && this.sex === "female") {
       let jupiterRemainingLife = (960 - jupiterAge);
       return jupiterRemainingLife

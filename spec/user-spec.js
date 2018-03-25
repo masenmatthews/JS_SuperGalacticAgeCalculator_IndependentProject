@@ -17,11 +17,11 @@ describe('User', function() {
   });
 
   it("Takes the user's age and return it in Mercury years", function() {
-    expect(human.mercuryAge()).toEqual(5);
+    expect(human.mercuryAge()).toEqual(95);
   });
 
   it("Takes the user's age and sex and returns how many Mercury years they have left to live", function() {
-    expect(human.mercuryTimeLeft()).toEqual(13);
+    expect(human.mercuryTimeLeft()).toEqual(221);
   });
 
   it("Takes the user's age and return it in Venus years", function() {
